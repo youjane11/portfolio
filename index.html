@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/20cee36f21.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="container-aside">
+            <div class="header">
+                <div class="details">
+                    <img src="img/profile-img.jpg" class="image" alt="">
+                    <h3 class="username">Chonnawi sirivong</h3>
+                    <div class="socialBox">
+                        <a href="https://twitter.com/youjane11/" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/youjane14" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/youjane14" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" class="icon"><i class="fa-brands fa-skype"></i></a>
+                        <a href="" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aside-main">
+                <div class="menu">
+                    <div class="menu-item">
+                        <a href="" class="menu-btn"><i class="fa-solid fa-house"></i><span class="menu-label">Home</span></a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="" class="menu-btn"><i class="fa-solid fa-user"></i><span class="menu-label">About</span></a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="" class="menu-btn"><i class="fa-solid fa-file"></i><span class="menu-label">Resume</span></a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="" class="menu-btn"><i class="fa-solid fa-book"></i><span class="menu-label">Portfolio</span></a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="" class="menu-btn"><i class="fa-solid fa-database"></i><span class="menu-label">Services</span></a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="" class="menu-btn"><i class="fa-solid fa-phone"></i><span class="menu-label">Contact</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="aside-footer">
+                <p class="footer-label">&#169; Copyright <strong>Chonnawi sirivong</strong></p>
+                <p class="footer-label-info">Designed By <strong>Chonnawi sirivong</strong></p>
+            </div>
+        </aside>
+        <main class="container-main">
+            <div class="bg-filter"></div>
+            <h1 class="main-title">Chonnawi sirivong</h1>
+            <p class="profession">I'm <span>a Seeing experience in Technology and information in a hotel.</span></p>
+            <button class="main-showMenu" onclick="ShowMenu()"><i class="fa-solid fa-bars"></i></button>
+        </main>
+    </div>
+    <script>
+        function ShowMenu() {
+            let menu = document.querySelector(".container-aside"),
+            btnShowMenu = document.querySelector(".main-showMenu");
+            menu.classList.toggle("showMenu");
+            if(btnShowMenu.innerHTML == "<i class=\"fa-solid fa-bars\"></i>")
+                btnShowMenu.innerHTML = "<i class=\"fa-solid fa-xmark\"></i>";
+            else
+                btnShowMenu.innerHTML = "<i class=\"fa-solid fa-bars\"></i>";
+        }
+    </script>
+</body>
+</html>
